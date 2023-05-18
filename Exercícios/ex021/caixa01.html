@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*box-level
+            podemos mudar o tipo de display usando a propriedade-display*/
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+
+            /*
+            código completo
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgba(0, 0, 255, 0.963);*/
+
+            border: 10px solid blue;
+
+           /*
+           código completo
+           padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; 
+            sempre sentido horário para short-hand */
+
+            padding: 10px 10px 10px 10px;
+
+            /*se todos os valores forem iguais, basta informar uma vez. ex: padding: 10px;
+            se colocarmos 2 valores. ex : padding: 10px 20 px. O resultado será 10 para top e bottom, e 20 para right e left. */
+            
+           /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            idem paddng 
+            podemos usar auto também no meio da config, ex embaixo.*/
+
+            margin: 20px auto 40px auto;
+
+            /*
+            idem border
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet; */
+
+            outline: 5px dashed blueviolet;
+        }
+        a{ /*inline-level*/
+           border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixa box-level, mas os <a href="#">links são exemplos de caixas inline-levels</a>. Vamos ver como tudo isso funciona.</p>
+*** user agent significa configuração automática do navegador ***
+</body>
+</html>
